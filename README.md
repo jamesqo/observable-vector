@@ -12,9 +12,15 @@ The [IObservableVector](https://msdn.microsoft.com/en-us/library/windows/apps/br
 
 Unforunately, Microsoft doesn't provide a default implementation of `IObservableVector`. This means that normally, you wouldn't be able to use it in your app without writing a lot of boilerplate code.
 
-Observable Vector simply provides a class that implements IObservableVector, so you don't have to make one yourself.
+**Observable Vector** simply provides a class that implements IObservableVector, so you don't have to make one yourself.
 
-## OK, great. How do I install this?
+## Features?
+
+- Easy to use
+- Easy to extend
+- Can be used from other languages, like C++/CX or JavaScript
+
+## OK, sounds great. How do I install this?
 
 Just:
 
