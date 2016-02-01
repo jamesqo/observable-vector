@@ -36,7 +36,44 @@ Install-Package ObservableVector.NonGeneric
 
 # Getting Started
 
-TBC.
+Just use ObservableVector like a normal List:
+
+```csharp
+using System.Collections.Generic;
+
+var vector = new ObservableVector<int>();
+vector.Add(1);
+vector.Add(2);
+if (vector.Remove(3))
+    Console.WriteLine("Huh?");
+```
+
+Subscribe to the `VectorChanged` event for notifications:
+
+```csharp
+vector.VectorChanged += MyHandler;
+
+private void MyHandler(IObservableVector<int> sender, IVectorChangedEventArgs e)
+{
+    bool removed = e.CollectionChange == CollectionChange.ItemRemoved;
+
+    Console.WriteLine("Index of change: {0}", e.Index);
+    Console.WriteLine("Was an item removed? {0}", removed);
+}
+```
+
+You can also subclass it easily:
+
+```csharp
+public class MyVector<T> : ObservableVector<T>
+{
+    protected override void ClearItems()
+    {
+        base.ClearItems();
+        Console.WriteLine("Hello, world!");
+    }
+}
+```
 
 # FAQ
 
