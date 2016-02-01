@@ -7,7 +7,7 @@
     <ProjectGuid>{2549B0F7-3C4B-4B50-AD85-5BABFE464A3C}</ProjectGuid>
     <OutputType>winmdobj</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ObservableVector.NonGeneric</RootNamespace>
+    <RootNamespace>System.Collections</RootNamespace>
     <AssemblyName>ObservableVector.NonGeneric</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
@@ -115,11 +115,11 @@
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
+  <!--Bug workaround: For some reason MSBuild doesn't listen to the assembly name for winmd projects.-->
   <Target Name="AfterBuild">
+    <ItemGroup>
+      <Binaries Include="$(OutDir)*">
+    </ItemGroup>
+    <Move SourceFiles="@(Binaries)" DestinationFiles="@(Binaries->'$(AssemblyName)%(Extension)')">
   </Target>
-  -->
 </Project>
