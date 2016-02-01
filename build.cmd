@@ -12,22 +12,22 @@ if /i "%1" == "-h" goto usage
 if /i "%1" == "--help" goto usage
 
 if /i "%1" == "-c" (
-    set "config=%2"
+    set "config=%~2"
     shift
 )
 
 if /i "%1" == "--config" (
-    set "config=%2"
+    set "config=%~2"
     shift
 )
 
 if /i "%1" == "-p" (
-    set "config=%2"
+    set "config=%~2"
     shift
 )
 
 if /i "%1" == "--platform" (
-    set "config=%2"
+    set "config=%~2"
     shift
 )
 
