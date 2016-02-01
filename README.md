@@ -44,6 +44,6 @@ TBC.
 
 If you're writing your app in a non-.NET language, such as C++/CX or JavaScript, then you'll need to use the non-generic version. This is due to technical limitations of the WinRT platform, which mandates that all exposed types must be sealed and non-generic. See [here](http://stackoverflow.com/questions/9509099/winrt-reason-for-disallowing-custom-generic-types-or-interfaces) for more info.
 
-You may also want to go down this route if you're 1) writing a WinRT component and 2) exposing an ObservableVector in your API, for the reasons mentioned above.
+You may also want to go down this route if you're 1) writing a WinRT component and 2) exposing an ObservableVector from your API, for the reasons mentioned above.
 
 ## What's the difference between this and ObservableCollection?
