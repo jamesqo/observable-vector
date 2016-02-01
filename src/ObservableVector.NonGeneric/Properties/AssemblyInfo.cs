@@ -6,11 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ObservableVector.NonGeneric")]
-[assembly: AssemblyDescription(@"Observable Vector makes it easy to use the IObservableVector<T> interface in your Windows app. This is the non-generic version which can be used in non-.NET projects targeting the Windows Store, such as C++/CX or JavaScript.
-
-Find us on GitHub at https://github.com/jamesqo/observable-vector")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("James Ko")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("ObservableVector.NonGeneric")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
@@ -26,6 +24,6 @@ Find us on GitHub at https://github.com/jamesqo/observable-vector")]
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.3.0.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 [assembly: ComVisible(false)]
