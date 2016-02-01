@@ -47,3 +47,5 @@ If you're writing your app in a non-.NET language, such as C++/CX or JavaScript,
 You may also want to go down this route if you're 1) writing a WinRT component and 2) exposing an ObservableVector from your API, for the reasons mentioned above.
 
 ## What's the difference between this and ObservableCollection?
+
+TBC.
