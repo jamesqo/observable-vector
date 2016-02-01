@@ -5,28 +5,28 @@ set "config=Debug"
 set "platform=Any CPU"
 
 :arg_loop
-if "%1" == "" goto args_done
+if "%~1" == "" goto args_done
 
-if /i "%1" == "-?" goto usage
-if /i "%1" == "-h" goto usage
-if /i "%1" == "--help" goto usage
+if /i "%~1" == "-?" goto usage
+if /i "%~1" == "-h" goto usage
+if /i "%~1" == "--help" goto usage
 
-if /i "%1" == "-c" (
+if /i "%~1" == "-c" (
     set "config=%~2"
     shift
 )
 
-if /i "%1" == "--config" (
+if /i "%~1" == "--config" (
     set "config=%~2"
     shift
 )
 
-if /i "%1" == "-p" (
+if /i "%~1" == "-p" (
     set "config=%~2"
     shift
 )
 
-if /i "%1" == "--platform" (
+if /i "%~1" == "--platform" (
     set "config=%~2"
     shift
 )
