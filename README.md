@@ -22,7 +22,7 @@ Just:
 Install-Package ObservableVector
 ```
 
-If you want the non-generic version ([see below](#) for why you might), then type this instead:
+If you want the non-generic version ([see below](#why-would-i-want-to-use-the-non-generic-version) for why you might), then type this instead:
 
 ```powershell
 Install-Package ObservableVector.NonGeneric
