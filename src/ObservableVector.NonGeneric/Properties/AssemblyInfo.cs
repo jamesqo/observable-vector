@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 
 Find us on GitHub at https://github.com/jamesqo/observable-vector")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("James Ko")]
 [assembly: AssemblyProduct("ObservableVector.NonGeneric")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]

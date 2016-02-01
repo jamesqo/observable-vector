@@ -7,7 +7,7 @@
     <ProjectGuid>{2549B0F7-3C4B-4B50-AD85-5BABFE464A3C}</ProjectGuid>
     <OutputType>winmdobj</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>System.Collections</RootNamespace>
+    <RootNamespace>ObservableVector.NonGeneric</RootNamespace>
     <AssemblyName>ObservableVector.NonGeneric</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
