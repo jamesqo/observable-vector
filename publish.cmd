@@ -20,9 +20,9 @@ call "%~dp0build.cmd" -p "Any CPU" -c Release
 cd "%~dp0src"
 for /d %%d in (*) do (
     cd "%%d"
-    del /q *.nupkg > nul
+    del /q *.nupkg > nul 2>&1
     "%nuget%" pack %%d.csproj -Prop Configuration=Release
     "%nuget%" push *.nupkg
-    del /q *.nupkg
+    del /q *.nupkg > nul
     cd "%~dp0src"
 )
