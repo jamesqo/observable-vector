@@ -70,7 +70,7 @@ public class MyVector<T> : ObservableVector<T>
     protected override void ClearItems()
     {
         base.ClearItems();
-        Console.WriteLine("Hello, world!");
+        Console.WriteLine("Windows 10 devs rock!");
     }
 }
 ```
@@ -85,4 +85,4 @@ You may also want to go down this route if you're 1) writing a WinRT component a
 
 ## What's the difference between this and ObservableCollection?
 
-TBC.
+[ObservableCollection](https://msdn.microsoft.com/en-us/library/ms668604(v=vs.110).aspx) signals changes via the INotifyCollectionChanged interface, which is being replaced by IObservableVector. See [this blog post](http://blogs.u2u.be/diederik/post/2012/01/03/Hello-ObservableVector-goodbye-ObservableCollection.aspx) for more.
