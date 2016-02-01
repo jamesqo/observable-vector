@@ -1,5 +1,7 @@
 # Observable Vector
 
+A drop-in implementation for IObservableVector for Windows 10 apps.
+
 ## What is this?
 
 If you're a Windows 10 developer, you're probably familiar with MVVM, or the *Model-View-ViewModel* pattern. For those who aren't, it's essentially a design pattern (based on binding and events) that helps keep your code maintainable by separating the UI code from the "business logic."
@@ -10,7 +12,7 @@ The [IObservableVector](https://msdn.microsoft.com/en-us/library/windows/apps/br
 
 Unforunately, Microsoft doesn't provide a default implementation of `IObservableVector`. This means that normally, you wouldn't be able to use it in your app without writing a lot of boilerplate code.
 
-Observable Vector provides a default implementation of `IObservableVector` so you don't have to. It's simple to use and easy to extend.
+Observable Vector simply provides a class that implements IObservableVector, so you don't have to make one yourself.
 
 ## OK, great. How do I install this?
 
