@@ -118,8 +118,8 @@
   <!--Bug workaround: For some reason MSBuild doesn't listen to the assembly name for winmd projects.-->
   <Target Name="AfterBuild">
     <ItemGroup>
-      <Binaries Include="$(OutDir)*">
+      <Binaries Include="$(OutDir)*"/>
     </ItemGroup>
-    <Move SourceFiles="@(Binaries)" DestinationFiles="@(Binaries->'$(AssemblyName)%(Extension)')">
+    <Move SourceFiles="@(Binaries)" DestinationFiles="@(Binaries->'$(AssemblyName)%(Extension)')"/>
   </Target>
 </Project>
