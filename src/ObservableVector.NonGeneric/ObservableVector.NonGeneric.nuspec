@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>ObservableVector.NonGeneric</id>
+    <version>$version$</version>
+    <authors>James Ko</authors>
+    <licenseUrl>http://github.com/jamesqo/observable-vector/blob/master/LICENSE</licenseUrl>
+    <projectUrl>http://github.com/jamesqo/observable-vector</projectUrl>
+    <description>
+    Observable Vector makes it easy to use the IObservableVector&lt;T&gt; interface in your Windows app.
+
+    Find us on GitHub at https://github.com/jamesqo/observable-vector
+    </description>
+    <tags>windows 10 app runtime winrt xaml mvvm observable vector observablevector iobservablevector t iobservable</tags>
+  </metadata>
+  <files>
+      <file src="bin\Release\ObservableVector.dll" target="lib\.NETCore50" />
+  </files>
+</package>
