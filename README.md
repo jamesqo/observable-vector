@@ -89,4 +89,4 @@ You may also want to go down this route if you're 1) writing a WinRT component a
 
 # License
 
-[MIT](LICENSE)
+[MIT.](LICENSE)
