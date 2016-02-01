@@ -1,6 +1,6 @@
 # Observable Vector
 
-A drop-in implementation for IObservableVector for Windows 10 apps.
+A drop-in implementation of IObservableVector for Windows 10 apps.
 
 ## What is this?
 
