@@ -116,10 +116,10 @@
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
   <!--Bug workaround: For some reason MSBuild doesn't listen to the assembly name for winmd projects.-->
-  <Target Name="AfterBuild">
+  <!--<Target Name="AfterBuild">
     <ItemGroup>
       <Binaries Include="$(OutDir)*"/>
     </ItemGroup>
     <Move SourceFiles="@(Binaries)" DestinationFiles="@(Binaries->'%(RootDir)%(Directory)$(AssemblyName)%(Extension)')"/>
-  </Target>
+  </Target>-->
 </Project>
