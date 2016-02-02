@@ -7,7 +7,7 @@
     <ProjectGuid>{B4935B37-B1DB-4D4F-A2D5-76E00E592433}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>System.Collections.Generic</RootNamespace>
+    <RootNamespace>Collections.Generic</RootNamespace>
     <AssemblyName>ObservableVector</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>

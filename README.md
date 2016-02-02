@@ -39,7 +39,7 @@ Install-Package ObservableVector.NonGeneric
 Just use ObservableVector like a normal List:
 
 ```csharp
-using System.Collections.Generic;
+using Collections.Generic;
 
 var vector = new ObservableVector<int>();
 vector.Add(1);
