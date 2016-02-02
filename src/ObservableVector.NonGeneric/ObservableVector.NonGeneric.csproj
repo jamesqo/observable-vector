@@ -120,6 +120,6 @@
     <ItemGroup>
       <Binaries Include="$(OutDir)*"/>
     </ItemGroup>
-    <Move SourceFiles="@(Binaries)" DestinationFiles="@(Binaries->'$(AssemblyName)%(Extension)')"/>
+    <Move SourceFiles="@(Binaries)" DestinationFiles="@(Binaries->'%(RootDir)%(Directory)$(AssemblyName)%(Extension)')"/>
   </Target>
 </Project>
