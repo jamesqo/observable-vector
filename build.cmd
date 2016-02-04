@@ -46,4 +46,5 @@ goto :eof
 
 :args_done
 
-msbuild "%~dp0ObservableVector.sln" /p:Configuration="%config%" /p:Platform="%platform%"
+cd "%~dp0"
+msbuild /p:Configuration="%config%" /p:Platform="%platform%"
